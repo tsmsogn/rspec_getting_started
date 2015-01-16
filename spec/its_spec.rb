@@ -1,5 +1,5 @@
-# User
-class User
+# MyClass
+class MyClass
   attr_accessor :posts
 
   def initialize
@@ -7,11 +7,11 @@ class User
   end
 end
 
-describe User do
+describe MyClass do
   subject do
-    user = User.new
-    user.posts << 'foo'
-    user
+    my_class = MyClass.new
+    my_class.posts << 'foo'
+    my_class
   end
 
   its('posts.first') { should eq 'foo' }
